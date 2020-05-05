@@ -21,12 +21,12 @@ with open("src/foo.txt", "r") as foofoo:
 
 # YOUR CODE HERE
 
-with open("src/bar.txt", "w") as barbar:
-  barbar.write("Hello there\Come along\Go away")
+with open("src/bar.txt", "w") as foobar:
+  foobar.write("Hello there\nCome along\nGo away")
 
   # you can also open and read files this wat too
 
-  f = open("src/bar.txt", "r")
-  text = f.read()
+  foobar = open("src/bar.txt", "r")
+  text = foobar.read()
   print(text)
-  # f.close()
+  foobar.close()
